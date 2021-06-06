@@ -1,0 +1,751 @@
+/* --------------------------Reset------------------------------------ */
+
+body {
+    display: block;
+    margin: 0;
+    font-family: Arial, Sans-Serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* ----------------------------LAYOUT-------------------------------- */
+
+body {
+    background-image: url(../images/bluebg.jpg);
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed;
+    background-position: center; */
+}
+
+.logcon {
+    background-color: #009688;
+    height: 917px;
+    z-index: 999;
+}
+
+
+/* Change styles for span and cancel button on extra small screens */
+
+
+/* ------------------------------VARIABLES-------------------------- */
+
+:root {
+    --blue: #4099ff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #FF5370;
+    --orange: #fd7e14;
+    --yellow: #FFB64D;
+    --green: #2ed8b6;
+    --teal: #20c997;
+    --cyan: #00bcd4;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #4099ff;
+    --secondary: #6c757d;
+    --success: #2ed8b6;
+    --info: #00bcd4;
+    --warning: #FFB64D;
+    --danger: #FF5370;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: "Poppins", sans-serif;
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+
+/* -----------------------------LOGIN------------------------------- */
+
+.input-group,
+#wrapper h1 {
+    /* font-family: poppins, sans-serif; */
+    font-family: Audiowide, sans-serif;
+}
+
+img.blogo {
+    z-index: -1;
+}
+
+.blogo-container {
+    position: absolute;
+    left: 150px;
+    top: 330px;
+    color: #ffffff;
+    z-index: -1;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.sectcon {
+    width: 100%!important;
+    z-index: 9999;
+}
+
+
+/* .formcon {
+    max-width: 500px;
+    margin: auto
+} */
+
+.input-group {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 2px 16px;
+}
+
+.icon {
+    padding: 10px;
+    /* background: dodgerblue; */
+    background: #e9ecef;
+    color: #495057;
+    /* color: #fff; */
+    min-width: 50px;
+    text-align: center;
+    /* background-color: #e9ecef; */
+    /* background-color: dodgerblue; */
+    /* border: 2px solid dodgerblue; */
+    border-radius: 5px 0 0 5px;
+    transition: ;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #ced4da;
+    transition: box-shadow 0.2s ease;
+}
+
+.input-field:focus {
+    /* outline-width: 2px 2px 2px 0;
+    outline-color: rgba(30, 143, 255, 0.329);
+    outline-style: solid; */
+    /* outline: auto rgba(30, 143, 255, 0.329);
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #ced4da; */
+    z-index: 999;
+    box-shadow: 0px 0px 1px 3px rgba(30, 143, 255, 0.329);
+    /* box-shadow: 5px 8px rgba(30, 143, 255, 0.329); */
+}
+
+
+/* Set a style for the submit button */
+
+.btn {
+    background-color: dodgerblue;
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-size: 16px;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+
+/* ------------------------------ MANAGEMENT --------------------------- */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.reginput {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 5%;
+}
+
+.regcheck {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 5%;
+}
+
+.regsubmit {
+    width: 70%;
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5%;
+}
+
+.regsubmit:hover {
+    background-color: #45a049;
+}
+
+div.regform {
+    border-radius: 5px;
+    padding: 110px 50px 50px 50px;
+}
+
+div.regform h1 {
+    margin-left: 5%;
+}
+
+#text {
+    display: none;
+    visibility: hidden;
+}
+
+
+/* ------------------------------ BUTTONS -------------------------------- */
+
+.btnwide {
+    width: 100%;
+}
+
+.cbtn {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.success {
+    background-color: #4CAF50;
+}
+
+
+/* Green */
+
+.success:hover {
+    background-color: #46a049;
+}
+
+.info {
+    background-color: #2196F3;
+}
+
+
+/* Blue */
+
+.info:hover {
+    background: #0b7dda;
+}
+
+.warning {
+    background-color: #ff9800;
+}
+
+
+/* Orange */
+
+.warning:hover {
+    background: #e68a00;
+}
+
+.danger {
+    background-color: #f44336;
+}
+
+
+/* Red */
+
+.danger:hover {
+    background: #da190b;
+}
+
+.default {
+    background-color: #e7e7e7;
+    color: black;
+}
+
+
+/* Gray */
+
+.default:hover {
+    background: #ddd;
+}
+
+
+/* ------------------------------CARD------------------------------ */
+
+.card {
+    box-shadow: -2px 0 7px -2px rgb(0 0 0 / 50%);
+    transition: 0.3s;
+    /* ----------------------- */
+    /* position: relative; */
+    min-height: 100%;
+    background: #fff;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    /* left: auto; */
+    /* float: right; */
+}
+
+
+/* On mouse-over, add a deeper shadow */
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/* Add some padding inside the card container */
+
+.container {
+    padding: 2px 16px;
+}
+
+
+/* --------------------------NOTIFICATION---------------------------- */
+
+.notification {
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+    padding: 15px 15px;
+    position: relative;
+    display: inline-block;
+    /* border-radius: 50px; */
+    text-align: center;
+}
+
+.notification:hover {
+    background: red;
+}
+
+.notification .badge {
+    position: absolute;
+    top: 1px;
+    right: 65px;
+    padding: 5px 5px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    width: 13%;
+}
+
+
+/* --------------------------NAVBAR----------------------------------- */
+
+.navicon {}
+
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+    text-align: center;
+    position: fixed;
+}
+
+.navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    width: 10%;
+    height: 44px;
+    /* border-right: 1px solid rgb(109, 106, 106); */
+}
+
+.navbar a:nth-child(8) {
+    border-right: unset;
+}
+
+.navbar a:hover {
+    background-color: #000;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+}
+
+
+/* ------------------------- SEARCH BAR -------------------------------- */
+
+.CAS {
+    background-color: #2d4b21;
+    color: #fff;
+}
+
+.CECS {
+    background-color: #7a0605;
+    color: #fff;
+}
+
+.COC {
+    background-color: #3f22d7;
+    color: #fff;
+}
+
+.CED {
+    background-color: #0288df;
+    color: #fff;
+}
+
+.CON {
+    background-color: #fe40fc;
+    color: #fff;
+}
+
+.CBAA {
+    background-color: #bdbe64;
+    color: #fff;
+}
+
+.CHRM {
+    background-color: #b720b3;
+    color: #fff;
+}
+
+div.college-box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-gap: 10px;
+    background-color: #323a41;
+    padding: 2px;
+    align-content: center;
+}
+
+div.college-box div {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    text-align: center;
+    padding: 2px 0;
+    /* font-size: 30px; */
+}
+
+div.college-box div label {
+    padding-left: 10px;
+}
+
+form.searchform {
+    margin: auto;
+    padding: 150px 50px 0 50px;
+}
+
+.college-chkbx,
+div.college-box div label {
+    cursor: pointer;
+    padding: 10px;
+}
+
+form.searchform input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 70%;
+    background: #f1f1f1;
+}
+
+form.searchform select {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 20%;
+    background: #f1f1f1;
+    height: 42px;
+}
+
+form.searchform button {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    background: #28292b;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    height: 42px;
+}
+
+form.searchform button:hover {
+    background: #0b7dda;
+}
+
+form.searchform::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* ------------------------------ TABLE ---------------------------- */
+
+iframe {
+    overflow: hidden!important;
+    width: 100%;
+    height: 100%;
+    border: none;
+    overflow-x: hidden;
+    overflow-Y: hidden;
+}
+
+#scroller {
+    overflow: hidden!important;
+}
+
+iframe::-webkit-scrollbar {
+    display: none!important;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+.table-container {
+    width: 100%;
+    margin: auto;
+    padding: 110px 50px 50px 50px;
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 8px 16px 1px rgba(255, 255, 255, .8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 50%;
+    table-layout: fixed;
+    word-break: break-all;
+}
+
+#customers td,
+#customers th {
+    font-size: 13px;
+    border: 1px solid #ddd;
+    padding: 8px;
+    /* word-wrap: break-word; */
+    word-break: break-all;
+    width: 5%;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #41b0be;
+}
+
+#customers tr:nth-child(odd) {
+    background-color: #d5dbdb;
+}
+
+#customers tr:hover {
+    background-color: rgb(26, 168, 81);
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+/* -------------------------------GRID------------------------------- */
+
+.col {
+    float: left;
+    text-align: center;
+}
+
+.colr {
+    float: right;
+    text-align: center;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-1-2 {
+    /* width: 12.33%; */
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-2-3 {
+    width: 20.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+
+/* ------------------------------FONTAWESOME---------------------------- */
+
+.fas {
+    color: white;
+    font-size: 16px;
+}
+
+.fa {
+    font-size: 50px;
+    user-select: none;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+footer .fa {
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    width: 18px!important;
+}
+
+.fa-github {
+    /* background: #3B5998; */
+    background: #009688!important;
+    color: #fff;
+}
+
+.fa-facebook {
+    /* background: #3B5998; */
+    background: #009688!important;
+    color: #fff;
+}
+
+.fa-twitter {
+    background: #009688!important;
+    /* background: #55ACEE; */
+    color: #fff;
+}
+
+.fa-skype {
+    background: #009688!important;
+    /* background: #00aff0; */
+    color: #fff;
+}
+
+.fa-linkedin {
+    background: #009688!important;
+    /* background: #007bb5; */
+    color: #fff;
+}
+
+.fa-trash {
+    color: red;
+    border: 1px red solid;
+    padding: 5px;
+    border-radius: .2rem;
+    background-color: #fff;
+}
+
+.fa-eye {
+    color: #0b7dda;
+    border: 1px #0b7dda solid;
+    padding: 5px;
+    border-radius: .2rem;
+    background-color: #fff;
+}
+
+.fa-external-link-alt {
+    color: #13aabf;
+    border: 1px #13aabf solid;
+    padding: 5px;
+    border-radius: .2rem;
+    background-color: #fff;
+}
+
+.fa-edit {
+    color: #be4bdb;
+    border: 1px #be4bdb solid;
+    padding: 5px;
+    border-radius: .2rem;
+    background-color: #fff;
+}
+
+
+/* ---------------------------TEMP---------------------------------- */

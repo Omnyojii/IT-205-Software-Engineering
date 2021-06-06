@@ -1,0 +1,1202 @@
+/* --------------------------Reset------------------------------------ */
+
+body {
+    display: block;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #615a5f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header,
+section {
+    margin: 0!important;
+}
+
+.contact,
+.amencon,
+.carticle {
+    font-family: 'Montserrat', 'Raleway', sans-serif;
+}
+
+.cnav {
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    background: rgb(255, 255, 255);
+}
+
+.cite,
+.catqoute {
+    /* font-family: 'Cinzel', serif; */
+    font-family: 'Montserrat', 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+h4,
+h5 {
+    display: inline;
+    margin-block-start: unset;
+    margin-block-end: unset;
+    margin-inline-start: unset;
+    margin-inline-end: unset;
+    font-weight: bold;
+}
+
+
+/* -------------------------LAYOUT---------------------------------- */
+
+.catqoute img {
+    vertical-align: middle;
+}
+
+.catqoute {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    /* Fallback color */
+    background: rgba(0, 0, 0, 0.5);
+    /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+.logo {
+    width: 300px!important;
+    height: 95px!important;
+    display: inline-block;
+    padding: 8px 16px;
+    border: none;
+    vertical-align: middle;
+    border: 1px gold solid;
+    border-radius: 20px;
+    transition: .3s all ease;
+}
+
+.logo:hover {
+    border-radius: 1px;
+}
+
+.c-button {
+    margin: 30px 10px 0 0;
+}
+
+a.c-button {
+    color: rgb(53, 52, 46);
+}
+
+.c-bar .c-button {
+    white-space: normal;
+    /* padding: 2em; */
+    margin-right: 0.5em;
+    /* border: 1px gold solid; */
+}
+
+.c-button:hover {
+    border-bottom: 2px gold solid;
+}
+
+.cbooking {
+    border: 1px solid black!important;
+}
+
+.cbooking:hover {
+    background-color: rgba(128, 128, 128, 0.888);
+    color: #ffffff;
+}
+
+a {
+    transition: .3s all ease;
+    color: #ffffff;
+    /* text-decoration: none; */
+}
+
+td>a {
+    color: #000000;
+}
+
+.clinks {
+    margin-right: 1em;
+}
+
+.clinks>a {
+    color: rgb(44, 43, 40);
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.c-bar {
+    width: 100%;
+    overflow: hidden;
+}
+
+.c-center .c-bar {
+    display: inline-block;
+    width: auto;
+}
+
+.c-bar .c-bar-item {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+}
+
+
+/* 
+.c-bar .c-dropdown-hover,
+.c-bar .c-dropdown-click {
+    position: static;
+    float: left;
+} */
+
+.single {
+    background: url(images/o2.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.double {
+    background: url(images/o1.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 300px 100px;
+}
+
+.family {
+    background: url(images/r2.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 300px 100px;
+}
+
+
+/* -----------------------------------TABLE---------------------------------------------- */
+
+form.searchform {
+    max-width: 85%;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+form.searchform input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 70%;
+    background: #f1f1f1;
+}
+
+form.searchform select {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 20%;
+    background: #f1f1f1;
+    height: 42px;
+}
+
+form.searchform button {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    background: #28292b;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    height: 42px;
+}
+
+form.searchform button:hover {
+    background: #0b7dda;
+}
+
+form.searchform::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.searchbtn {
+    padding: 12px;
+    border: 1px solid #ccc;
+    /* border-radius: 4px; */
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.table-container {
+    width: 100%;
+    margin: auto;
+    padding: 50px 50px 50px 50px;
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 8px 16px 1px rgba(255, 255, 255, .8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 50%;
+    table-layout: fixed;
+    word-break: break-all;
+}
+
+#customers td,
+#customers th {
+    font-size: 13px;
+    border: 1px solid #ddd;
+    padding: 8px;
+    /* word-wrap: break-word; */
+    word-break: break-all;
+    width: 8%;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #41b0be;
+}
+
+#customers tr:nth-child(odd) {
+    background-color: #d5dbdb;
+}
+
+#customers tr:hover {
+    background-color: rgb(26, 168, 81);
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.congrats {
+    text-align: center;
+}
+
+.emailcontainer {
+    border: 1px solid #fff!important;
+    text-align: center;
+}
+
+.chtime {}
+
+
+/* ----------------------------------ROOM TABLE----------------------------------------- */
+
+.room-container {
+    width: 100%;
+    margin: auto;
+    padding: 10px 50px 10px 50px;
+}
+
+#rooms {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    border-collapse: collapse;
+    width: 100%;
+    /* box-shadow: 0 8px 16px 1px rgba(255, 255, 255, .8), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    height: 50%;
+    table-layout: fixed;
+    word-break: break-all;
+}
+
+#rooms td,
+#rooms th {
+    font-size: 13px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    /* word-wrap: break-word; */
+    word-break: break-all;
+    width: 8%;
+    height: 5%;
+}
+
+#rooms td:nth-child(even) {
+    /* background-color: #41b0be; */
+}
+
+#rooms td:nth-child(odd) {
+    /* background-color: #41b0be; */
+}
+
+#rooms th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    /* background-color: #4CAF50; */
+    color: black;
+}
+
+#rooms tr:nth-child(even) td:nth-child(even),
+#rooms tr:nth-child(odd) td:nth-child(odd) {
+    /* background: grey; */
+}
+
+#rooms tr:nth-child(odd) td:nth-child(even),
+#rooms tr:nth-child(even) td:nth-child(odd) {
+    /* background: white; */
+    /* background-color: #41b0be; */
+    /* background-color: #4CAF50; */
+}
+
+#rooms td:hover {
+    /* background-color: #0bda38!important; */
+}
+
+.single {
+    background-color: #4CAF50;
+}
+
+.twin {
+    background-color: #ec884d;
+}
+
+.family {
+    background-color: #0b7dda;
+}
+
+
+/* -----------------------------------CARD---------------------------------------------- */
+
+.card {
+    color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* transition: 0.3s; */
+    border-radius: 5px;
+    margin: 20px 10px 0 45px;
+    padding: 20px;
+    /* background: #615a5f; */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#776f74+0,544e52+5,544e52+95,776f74+100 */
+    background: rgb(119, 111, 116);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(119, 111, 116, 1) 0%, rgba(84, 78, 82, 1) 5%, rgba(84, 78, 82, 1) 95%, rgba(119, 111, 116, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(119, 111, 116, 1) 0%, rgba(84, 78, 82, 1) 5%, rgba(84, 78, 82, 1) 95%, rgba(119, 111, 116, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(119, 111, 116, 1) 0%, rgba(84, 78, 82, 1) 5%, rgba(84, 78, 82, 1) 95%, rgba(119, 111, 116, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#776f74', endColorstr='#776f74', GradientType=1);
+    box-shadow: 0 0 30px #EDBC81;
+    /* IE6-9 */
+}
+
+.card:hover {
+    /* box-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 25px rgb(190, 192, 99), 0 0 5px rgb(224, 241, 64); */
+    /* filter: drop-shadow(0 0 30px rgb(243, 243, 243)); */
+    box-shadow: 0 0 30px #EDBC81;
+}
+
+.card2 {
+    color: #f1f1f1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 20px 10px 0 45px;
+    padding: 20px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3f4c6b+0,3f4c6b+100;Blue+Grey+Flat */
+    /* background: rgb(63, 76, 107); */
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(63, 76, 107, 1) 0%, rgba(63, 76, 107, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(63, 76, 107, 1) 0%, rgba(63, 76, 107, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(63, 76, 107, 1) 0%, rgba(63, 76, 107, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#3f4c6b', GradientType=0);
+    /* IE6-9
+    /* 5px rounded corners */
+}
+
+.card3 {
+    color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* transition: 0.3s; */
+    border-radius: 5px;
+    margin: 20px 10px 0 10%;
+    padding: 20px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3f4c6b+0,3f4c6b+100;Blue+Grey+Flat */
+    background: rgb(63, 76, 107);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(63, 76, 107, 1) 0%, rgba(63, 76, 107, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(63, 76, 107, 1) 0%, rgba(63, 76, 107, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(63, 76, 107, 1) 0%, rgba(63, 76, 107, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#3f4c6b', GradientType=1);
+    /* IE6-9 */
+}
+
+.card4 {
+    height: 100%;
+    color: #f1f1f1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 20px 10px 0 45px;
+    padding: 20px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3f4c6b+0,3f4c6b+100;Blue+Grey+Flat */
+    /* background: rgb(63, 76, 107); */
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(63, 76, 107, 1) 0%, rgba(63, 76, 107, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(63, 76, 107, 1) 0%, rgba(63, 76, 107, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(63, 76, 107, 1) 0%, rgba(63, 76, 107, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#3f4c6b', GradientType=0);
+    /* IE6-9
+    /* 5px rounded corners */
+}
+
+.card5 {
+    color: #000000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 20px 10px 0 45px;
+    padding: 20px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3f4c6b+0,3f4c6b+100;Blue+Grey+Flat */
+    /* background: rgb(63, 76, 107); */
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(63, 76, 107, 1) 0%, rgba(63, 76, 107, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(63, 76, 107, 1) 0%, rgba(63, 76, 107, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(63, 76, 107, 1) 0%, rgba(63, 76, 107, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#3f4c6b', GradientType=0);
+    /* IE6-9
+    /* 5px rounded corners */
+}
+
+
+/* -------------------------------------LAYOUT--------------------------------------- */
+
+.chead {
+    /* padding: 30px; */
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    height: 1000px;
+    display: inline-flex;
+}
+
+.fhead {
+    /* padding: 30px; */
+    text-align: center;
+    /* font-size: 35px; */
+    color: white;
+    /* height: 1000px; */
+    background-color: #008000;
+    display: inline-flex;
+}
+
+.camen {
+    text-align: center;
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+    height: 300px;
+    background-color: #615a5f;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    justify-content: center;
+    grid-template-rows: 80px 80px;
+    padding: 50px 100px 0 0;
+}
+
+.amencon {
+    color: #ffffff;
+}
+
+.amencon h1 {
+    padding: 50px 0 0 0;
+}
+
+.camen div i {
+    padding-left: 80px;
+    text-align: left;
+}
+
+.camen div {
+    padding-left: 15px;
+    text-align: left;
+}
+
+#amenities {
+    background-color: #615a5f;
+}
+
+.camen div {}
+
+.clink6 {
+    border-radius: 10px;
+    width: 100%;
+    overflow: auto;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#87e0fd+0,53cbf1+40,05abe0+100;Blue+3D+%23+16 */
+    background: rgb(255, 255, 255);
+}
+
+.clink6 a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 25%;
+    /* Four links of equal widths */
+    text-align: center;
+}
+
+.clink6 a:hover {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+36,28343b+100;Grey+Black+3D */
+    background: rgb(255, 255, 255);
+}
+
+.cbody {
+    height: 1100px!important;
+    background-color: #e3e2e2;
+}
+
+.contact {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #b4bcc7;
+    height: auto;
+    text-align: center;
+    color: #ffffff;
+}
+
+iframe {}
+
+.cfooter {
+    padding: 0;
+    text-align: center;
+    color: white;
+    /* background-color: rgb(0, 0, 0); */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+36,28343b+100;Grey+Black+3D */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+62,828c95+73,28343b+100 */
+    background: rgb(181, 189, 200);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(181, 189, 200, 1) 0%, rgba(130, 140, 149, 1) 36%, rgba(40, 52, 59, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(181, 189, 200, 1) 0%, rgba(130, 140, 149, 1) 36%, rgba(40, 52, 59, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(181, 189, 200, 1) 0%, rgba(130, 140, 149, 1) 36%, rgba(40, 52, 59, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b', GradientType=0);
+    /* IE6-9 */
+}
+
+.copyright {
+    background-color: #2a363d;
+}
+
+.t-align {
+    text-align: center;
+}
+
+.l-align {
+    text-align: left;
+}
+
+
+/* ----------------------------------BUTTONS------------------------------- */
+
+
+/* input[type=submit] {
+    background-color: #000000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type=submit]:hover {
+    background-color: #ffffff;
+    color: #000000;
+} */
+
+
+/* .btn {
+    background-color: dodgerblue;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+} */
+
+.regcheck {
+    width: 100%;
+    padding: 10px 15px 4px 15px;
+    margin: 10px 0 15px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* box-sizing: border-box; */
+    /* margin-left: 5%; */
+}
+
+.input-container {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.icon {
+    padding: 10px;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+.btn {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+/* .btnroom {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ffffff, 0 0 40px #000000, 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #000000, 0 0 80px #000000;
+} */
+
+.btncontact {
+    background-color: #000000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btncontact:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.success {
+    background-color: #04AA6D;
+}
+
+
+/* Green */
+
+.success:hover {
+    background-color: #46a049;
+}
+
+.info {
+    background-color: #2196F3;
+}
+
+
+/* Blue */
+
+.info:hover {
+    background: #0b7dda;
+}
+
+.warning {
+    background-color: #ff9800;
+}
+
+
+/* Orange */
+
+.warning:hover {
+    background: #e68a00;
+}
+
+.danger {
+    background-color: #f44336;
+}
+
+
+/* Red */
+
+.danger:hover {
+    background: #da190b;
+}
+
+.default {
+    background-color: #e7e7e7;
+    color: black;
+}
+
+
+/* Gray */
+
+.default:hover {
+    background: #ddd;
+}
+
+
+/* ---------------------------------- BOOKING FORM ------------------------------- */
+
+.datebox,
+.adult,
+.kids,
+.fname,
+.lname,
+.email,
+.phone,
+.country,
+.request,
+.roomtype {
+    width: 100%;
+    padding-left: 10px;
+}
+
+
+/* ---------------------------------CONTACT FORM---------------------------------- */
+
+.contact h3 {
+    margin: 0px 0 30px 0;
+    color: #000000;
+    font-weight: bolder;
+}
+
+.condisplay {
+    text-align: center!important;
+    display: flex!important;
+    align-items: center;
+    justify-content: center;
+    background: -moz-linear-gradient(top, rgba(63, 76, 107, 1) 0%, rgba(63, 76, 107, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(63, 76, 107, 1) 0%, rgba(63, 76, 107, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(63, 76, 107, 1) 0%, rgba(63, 76, 107, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.pdisplay {
+    display: inline-flex!important;
+    width: 20%;
+    text-align: center!important;
+    align-items: center;
+    justify-content: center;
+}
+
+.pdisplay,
+.pdisplay a {
+    color: #ffffff;
+}
+
+input,
+textarea,
+select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.input-field {
+    transition: box-shadow 0.2s ease;
+}
+
+.input-field:focus {
+    /* box-shadow: 0px 0px 1px 3px rgba(30, 143, 255, 0.329); */
+    box-shadow: 0 2px 8px 0 rgba(255, 255, 255, .8), 0 2px 8px 0 rgb(0, 160, 235);
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #7f8992;
+    padding: 20px;
+    margin: 80px 0 100px 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 50%;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.bill {
+    display:
+}
+
+
+/* ---------------------------------ROOMS--------------------------------- */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 50% 20%;
+    grid-template-rows: 80px 200px;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 30px;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 80px 0px;
+    grid-gap: 10px;
+    /* background-color: #2196F3; */
+    padding: 0 30px 30px 30px;
+}
+
+.grid-container>div {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    text-align: left;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+.grid-container2>div {
+    text-align: left;
+    padding: 0 0;
+    font-size: 20px;
+}
+
+.currentRooms h5 {
+    /* text-shadow: 0 0 20px #fff, 0 0 30px #ffffff, 0 0 40px #000000, 0 0 50px #ffffff, 0 0 60px #ffffff, 0 0 70px #000000, 0 0 80px #000000; */
+}
+
+.currentRooms h4 {
+    color: #0bda38;
+}
+
+
+/* ---------------------------------GRID------------------------------------- */
+
+.mybanner {
+    border-radius: 0 0 10px 10px;
+}
+
+.divcon {
+    /* transition: 0.3s; */
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* padding: 20px; */
+}
+
+.menuflat {
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.menuflat ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menuflat a {
+    float: left;
+    display: block;
+    /* color: black; */
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-size: 17px;
+    background-image: ;
+}
+
+.menuflat .search-container {
+    float: right;
+}
+
+.menuflat input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    width: 50em;
+}
+
+.menuflat .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ccc;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.menuflat .search-container button:hover {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#63b6db+0,309dcf+100;Blue+3D+%234 */
+    background: rgb(255, 255, 255);
+}
+
+.menuflat a:hover {
+    /* border-bottom: 2px solid gold; */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#63b6db+0,309dcf+100;Blue+3D+%234 */
+    /* background: rgb(255, 255, 255); */
+    /* color: black; */
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 15px;
+    margin-bottom: 10px;
+    /* background-color: #33b5e5; */
+    color: #ffffff;
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
+    width: max-content;
+}
+
+.menu li:hover {
+    /* border-bottom: 2px solid gold; */
+    border: 1px white solid;
+    border-radius: 10px;
+}
+
+.cite {
+    /* position: absolute; */
+    /* background: rgb(0, 0, 0); */
+    /* Fallback color */
+    background-color: #544e52;
+    /* Black background with 0.5 opacity */
+    color: #ffffff;
+    width: inherit;
+    padding: 20px;
+}
+
+nav {
+    float: left;
+    /* width: 30%; */
+    padding: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.col {
+    float: left;
+    text-align: center;
+}
+
+.colr {
+    float: right;
+    text-align: center;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-5-6 {
+    width: 49.5%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-9-10 {
+    width: 78%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+
+/* -----------------------FONTAWESOME------------------- */
+
+.social {
+    /* float: left; */
+    /* display: block; */
+}
+
+.fa,
+.fas {
+    /* font-size: 50px; */
+    user-select: none;
+}
+
+.fa,
+.fas {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+}
+
+footer .fa {
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    width: 18px!important;
+}
+
+.fa-github {
+    /* background: #3B5998; */
+    background: #009688!important;
+    color: #fff;
+}
+
+.fa-facebook {
+    /* background: #3B5998; */
+    background: #009688!important;
+    color: #fff;
+}
+
+.fa-twitter {
+    background: #009688!important;
+    /* background: #55ACEE; */
+    color: #fff;
+}
+
+.fa-skype {
+    background: #009688!important;
+    /* background: #00aff0; */
+    color: #fff;
+}
+
+.fa-linkedin {
+    background: #009688!important;
+    /* background: #007bb5; */
+    color: #fff;
+}
+
+.fa-trash {
+    color: red;
+    border: 1px red solid;
+    padding: 5px;
+    border-radius: .2rem;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.fa-door-open {
+    color: #0b7dda;
+    border: 1px #0b7dda solid;
+    padding: 5px;
+    border-radius: .2rem;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.fa-external-link-alt {
+    color: #13aabf;
+    border: 1px #13aabf solid;
+    padding: 5px;
+    border-radius: .2rem;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.fa-edit {
+    color: #be4bdb;
+    border: 1px #be4bdb solid;
+    padding: 5px;
+    border-radius: .2rem;
+    background-color: #fff;
+    font-size: 16px;
+}
